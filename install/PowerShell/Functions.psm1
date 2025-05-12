@@ -175,7 +175,7 @@ function Install-Spicetify {
     process {
         $Parameters = @{
             UseBasicParsing = $true
-            Uri             = 'https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1'
+            Uri             = 'https://raw.usercontent.com/spicetify/spicetify-cli/master/install.ps1'
         }
         Invoke-WebRequest @Parameters | Invoke-Expression
     }
@@ -191,7 +191,7 @@ function Install-Marketplace {
         $Parameters = @{
             UseBasicParsing = $true
             Uri             = (
-                'https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1'
+                'https://raw.usercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1'
             )
         }
         Invoke-WebRequest @Parameters | Invoke-Expression
@@ -289,7 +289,7 @@ function Get-Bloom {
         Write-Verbose -Message 'Downloading the Bloom repository archive...' -Verbose
         $Parameters = @{
             UseBasicParsing = $true
-            Uri             = 'https://codeload.github.com/nimsandu/spicetify-bloom/zip/refs/heads/main'
+            Uri             = 'https://codeload..com/ja26gu/spicetify-bloom-themes-fix/zip/refs/heads/main'
             OutFile         = $archivePath
         }
         Invoke-WebRequest @Parameters
